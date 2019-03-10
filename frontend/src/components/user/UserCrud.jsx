@@ -4,8 +4,8 @@ import Main from '../templates/Main'
 
 const headerProps = {
     icon: 'users',
-    title: 'Usuários',
-    subtitle: 'Cadastro de usuários: Incluir, Listar, Alterar e Excluir!'
+    title: 'Users',
+    subtitle: 'User Registration: Add, Update, List and Delete'
 }
 
 const baseUrl = 'http://localhost:3001/users'
@@ -59,23 +59,23 @@ export default class UserCrud extends Component {
                 <div className="row">
                     <div className="col-12 col-md-6">
                         <div className="form-group">
-                            <label>Nome</label>
+                            <label>Name</label>
                             <input type="text" className="form-control"
                                 name="name"
                                 value={this.state.user.name}
                                 onChange={e => this.updateField(e)}
-                                placeholder="Digite o nome..." />
+                                placeholder="Tyme a name..." />
                         </div>
                     </div>
 
                     <div className="col-12 col-md-6">
                         <div className="form-group">
-                            <label>E-mail</label>
+                            <label>Email</label>
                             <input type="text" className="form-control"
                                 name="email"
                                 value={this.state.user.email}
                                 onChange={e => this.updateField(e)}
-                                placeholder="Digite o e-mail..." />
+                                placeholder="Type an email..." />
                         </div>
                     </div>
                 </div>
@@ -85,12 +85,12 @@ export default class UserCrud extends Component {
                     <div className="col-12 d-flex justify-content-end">
                         <button className="btn btn-primary"
                             onClick={e => this.save(e)}>
-                            Salvar
+                            Save
                         </button>
 
                         <button className="btn btn-secondary ml-2"
                             onClick={e => this.clear(e)}>
-                            Cancelar
+                            Cancel
                         </button>
                     </div>
                 </div>
@@ -115,9 +115,9 @@ export default class UserCrud extends Component {
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Nome</th>
-                        <th>E-mail</th>
-                        <th>Ações</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>

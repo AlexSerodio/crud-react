@@ -2,13 +2,18 @@
   "users": [
     {
       "id": 1,
-      "name": "Arthur Oliveira",
-      "email": "arthur@mail.com"
+      "name": "Alan",
+      "email": "alan@email.com"
     },
     {
-      "name": "Alex",
-      "email": "alequis@email.com",
+      "name": "Euler",
+      "email": "euler@email.com",
       "id": 3
+    },
+    {
+      "name": "Ada",
+      "email": "ada@email.com",
+      "id": 4
     }
   ]
 }
